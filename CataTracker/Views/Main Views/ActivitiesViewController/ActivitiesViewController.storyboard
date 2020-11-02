@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="AmZ-Mx-2ip">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Activities View Controller-->
+        <scene sceneID="wIe-Y9-HE3">
+            <objects>
+                <viewController id="AmZ-Mx-2ip" customClass="ActivitiesViewController" customModule="CataTracker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="roB-UF-Viu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Dni-x2-RXE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="100" id="Fwh-Fb-eUr" customClass="ActivityTableViewCell" customModule="CataTracker" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Fwh-Fb-eUr" id="80B-pb-Ttk">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NEO-fv-QAe">
+                                                    <rect key="frame" x="15" y="11" width="345" height="78"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="Xdx-nD-5ka">
+                                                            <rect key="frame" x="8" y="8" width="329" height="62"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ir-16-upn">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="329" height="27"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" name="Accent"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dok-Qk-ocI">
+                                                                    <rect key="frame" x="0.0" y="35" width="329" height="27"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <color key="textColor" name="Accent"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="Background"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="Xdx-nD-5ka" secondAttribute="bottom" constant="8" id="AJB-5O-6Kq"/>
+                                                        <constraint firstAttribute="trailing" secondItem="Xdx-nD-5ka" secondAttribute="trailing" constant="8" id="WPQ-dg-Tgb"/>
+                                                        <constraint firstItem="Xdx-nD-5ka" firstAttribute="leading" secondItem="NEO-fv-QAe" secondAttribute="leading" constant="8" id="dae-v3-51j"/>
+                                                        <constraint firstAttribute="height" constant="65" id="lZm-Gb-pvP"/>
+                                                        <constraint firstItem="Xdx-nD-5ka" firstAttribute="top" secondItem="NEO-fv-QAe" secondAttribute="top" constant="8" id="ydT-Ap-13o"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="NEO-fv-QAe" firstAttribute="trailing" secondItem="80B-pb-Ttk" secondAttribute="trailingMargin" id="2lK-0N-zce"/>
+                                                <constraint firstItem="NEO-fv-QAe" firstAttribute="top" secondItem="80B-pb-Ttk" secondAttribute="topMargin" id="ikQ-Cy-wcp"/>
+                                                <constraint firstItem="NEO-fv-QAe" firstAttribute="leading" secondItem="80B-pb-Ttk" secondAttribute="leadingMargin" id="irx-cY-Arq"/>
+                                                <constraint firstItem="NEO-fv-QAe" firstAttribute="bottom" secondItem="80B-pb-Ttk" secondAttribute="bottomMargin" id="mbc-yG-Djt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <connections>
+                                            <outlet property="cardView" destination="NEO-fv-QAe" id="tTN-Kv-m3d"/>
+                                            <outlet property="subtitleLabel" destination="dok-Qk-ocI" id="fy6-47-6xo"/>
+                                            <outlet property="titleLabel" destination="8ir-16-upn" id="54X-10-QHQ"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fBq-nh-HJU" customClass="AppUIButton" customModule="CataTracker" customModuleProvider="target">
+                                <rect key="frame" x="306" y="591" width="56" height="56"/>
+                                <state key="normal" image="FloatingActionButtonPlus"/>
+                                <connections>
+                                    <action selector="addActivity:" destination="AmZ-Mx-2ip" eventType="touchUpInside" id="MmM-Iv-TJF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uCP-fF-dxE" firstAttribute="trailing" secondItem="fBq-nh-HJU" secondAttribute="trailing" constant="13" id="8Iz-xy-xGX"/>
+                            <constraint firstItem="Dni-x2-RXE" firstAttribute="leading" secondItem="uCP-fF-dxE" secondAttribute="leading" id="F7c-ng-DF4"/>
+                            <constraint firstAttribute="bottom" secondItem="Dni-x2-RXE" secondAttribute="bottom" id="MyX-eE-kqu"/>
+                            <constraint firstItem="Dni-x2-RXE" firstAttribute="trailing" secondItem="uCP-fF-dxE" secondAttribute="trailing" id="T5p-Xr-Vak"/>
+                            <constraint firstItem="Dni-x2-RXE" firstAttribute="top" secondItem="uCP-fF-dxE" secondAttribute="top" id="bKY-Oy-HxL"/>
+                            <constraint firstItem="uCP-fF-dxE" firstAttribute="bottom" secondItem="fBq-nh-HJU" secondAttribute="bottom" constant="20" id="yrv-Ua-jLU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uCP-fF-dxE"/>
+                    </view>
+                    <connections>
+                        <outlet property="addButton" destination="fBq-nh-HJU" id="zMZ-hc-izJ"/>
+                        <outlet property="tableView" destination="Dni-x2-RXE" id="CYo-W4-eUU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ccV-Xq-Afn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="71.514242878560722"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FloatingActionButtonPlus" width="56" height="56"/>
+        <namedColor name="Accent">
+            <color red="0.92941176470588238" green="0.81568627450980391" blue="0.5607843137254902" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="Background">
+            <color red="0.25882352941176473" green="0.27450980392156865" blue="0.28627450980392155" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
