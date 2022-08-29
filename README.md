@@ -1,5 +1,5 @@
 # Track-Activities-To-do-list-App
-A to do list app that can display how much time you spent in these activities in a chart. This is a test
+A to do list app that can display how much time you spent in these activities in a chart.
 
 
 # What I learned
